@@ -20,6 +20,9 @@ import DashboardNavbar from "./dashboard/dashboard-navbar";
 // pricing
 import PricingCards from "./pricing-cards";
 
+// marketing
+import HeroDashboardMock from "./hero-dashboard-mock";
+
 // blog
 import Blogs from "./blog/blogs";
 
@@ -42,4 +45,6 @@ export {
     PricingCards,
 
     Blogs,
+
+    HeroDashboardMock,
 };

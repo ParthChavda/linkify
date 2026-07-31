@@ -33,18 +33,18 @@ export const COMPANIES = [
 
 export const PROCESS = [
     {
-        title: "Organize Your Links",
-        description: "Efficiently categorize and tag your links for quick access and easy management.",
+        title: "Discover",
+        description: "We study your workflows and pinpoint where an AI employee delivers the fastest ROI.",
         icon: FolderOpenIcon,
     },
     {
-        title: "Shorten and Customize",
-        description: "Create concise, branded links that are easy to share and track.",
+        title: "Build & Train",
+        description: "We design, train, and deploy a custom AI agent tailored to your business and tools.",
         icon: WandSparklesIcon,
     },
     {
-        title: "Analyze and Optimize",
-        description: "Gain insights into link performance and optimize for better engagement.",
+        title: "Scale & Optimize",
+        description: "We monitor performance and continuously improve your AI workforce as you grow.",
         icon: BarChart3Icon,
     },
 ] as const;
@@ -82,62 +82,62 @@ export const REVIEWS = [
         username: "@michaelsmith",
         avatar: "https://randomuser.me/api/portraits/men/1.jpg",
         rating: 5,
-        review: "This tool is a lifesaver! Managing and tracking my links has never been easier. A must-have for anyone dealing with numerous links."
+        review: "Our AI sales agent from AKAI books more qualified demos than two SDRs combined. It's been a game-changer for our pipeline."
     },
     {
         name: "Emily Johnson",
         username: "@emilyjohnson",
         avatar: "https://randomuser.me/api/portraits/women/1.jpg",
         rating: 4,
-        review: "Very useful app! It has streamlined my workflow considerably. A few minor bugs, but overall a great experience."
+        review: "The support agent handles almost half our tickets end-to-end now. A few edge cases still need a human, but it's saved us hours every day."
     },
     {
         name: "Daniel Williams",
         username: "@danielwilliams",
         avatar: "https://randomuser.me/api/portraits/men/2.jpg",
         rating: 5,
-        review: "I've been using this app daily for months. The insights and analytics it provides are invaluable. Highly recommend it!"
+        review: "We deployed an AI agent for finance reconciliation and it's caught errors we used to miss. The insights alone are worth it."
     },
     {
         name: "Sophia Brown",
         username: "@sophiabrown",
         avatar: "https://randomuser.me/api/portraits/women/2.jpg",
         rating: 4,
-        review: "This app is fantastic! It offers everything I need to manage my links efficiently."
+        review: "AKAI's HR agent handles onboarding end-to-end. It's made our first-week process painless for new hires."
     },
     {
         name: "James Taylor",
         username: "@jamestaylor",
         avatar: "https://randomuser.me/api/portraits/men/3.jpg",
         rating: 5,
-        review: "Absolutely love this app! It's intuitive and feature-rich. Has significantly improved how I manage and track links."
+        review: "I was skeptical about 'AI employees,' but our real estate lead-qualification agent proved me wrong within a week."
     },
     {
         name: "Olivia Martinez",
         username: "@oliviamartinez",
         avatar: "https://randomuser.me/api/portraits/women/3.jpg",
         rating: 4,
-        review: "Great app with a lot of potential. It has already saved me a lot of time. Looking forward to future updates and improvements."
+        review: "Great results so far — our support response time dropped significantly. Looking forward to expanding to more departments."
     },
     {
         name: "William Garcia",
         username: "@williamgarcia",
         avatar: "https://randomuser.me/api/portraits/men/4.jpg",
         rating: 5,
-        review: "This app is a game-changer for link management. It's easy to use, extremely powerful and highly recommended!"
+        review: "This is a genuine shift in how we operate. Our AI agents work around the clock and never drop a task."
     },
     {
         name: "Mia Rodriguez",
         username: "@miarodriguez",
         avatar: "https://randomuser.me/api/portraits/women/4.jpg",
         rating: 4,
-        review: "I've tried several link management tools, but this one stands out. It's simple, effective."
+        review: "We evaluated several AI vendors, but AKAI's agents were the easiest to deploy and the most reliable in production."
     },
     {
         name: "Henry Lee",
         username: "@henrylee",
         avatar: "https://randomuser.me/api/portraits/men/5.jpg",
         rating: 5,
-        review: "This app has transformed my workflow. Managing and analyzing links is now a breeze. I can't imagine working without it."
+        review: "AKAI has transformed how our team works. What used to take a full-time hire now runs on autopilot."
     },
 ] as const;

@@ -13,8 +13,8 @@ import { Label } from "./label";
 export const CARDS = [
     {
         Icon: Link2Icon,
-        name: "Shorten links",
-        description: "Create short links that are easy to remember and share.",
+        name: "Deploy an agent in minutes",
+        description: "Spin up a fully trained AI employee for any role — no engineering required.",
         href: "#",
         cta: "Learn more",
         className: "col-span-3 lg:col-span-1",
@@ -22,19 +22,19 @@ export const CARDS = [
             <Card className="absolute top-10 left-10 origin-top rounded-none rounded-tl-md transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_0%,#000_100%)] group-hover:scale-105 border border-border border-r-0">
                 <CardHeader>
                     <CardTitle>
-                        Create short links
+                        Create your agent
                     </CardTitle>
                     <CardDescription>
-                        Create short links that are easy to remember and share.
+                        Choose a role and AKAI handles the rest.
                     </CardDescription>
                 </CardHeader>
                 <CardContent className="-mt-4">
                     <Label>
-                        Paste your link
+                        Agent role
                     </Label>
                     <Input
                         type="text"
-                        placeholder="Paste your link here..."
+                        placeholder="e.g. Sales Development Rep"
                         className="w-full focus-visible:ring-0 focus-visible:ring-transparent"
                     />
                 </CardContent>
@@ -43,29 +43,29 @@ export const CARDS = [
     },
     {
         Icon: SearchIcon,
-        name: "Search your links",
-        description: "Quickly find the links you need with AI-powered search.",
+        name: "Ask anything, get it done",
+        description: "Query your AI workforce in plain English and get instant, accurate answers.",
         href: "#",
         cta: "Learn more",
         className: "col-span-3 lg:col-span-2",
         background: (
             <Command className="absolute right-10 top-10 w-[70%] origin-to translate-x-0 border border-border transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_40%,#000_100%)] group-hover:-translate-x-10 p-2">
-                <Input placeholder="Type to search..." />
+                <Input placeholder="Ask AKAI..." />
                 <div className="mt-1 cursor-pointer">
-                    <div className="px-4 py-2 hover:bg-muted rounded-md">linkify.io/hdf00c</div>
-                    <div className="px-4 py-2 hover:bg-muted rounded-md">linkify.io/sdv0n0</div>
-                    <div className="px-4 py-2 hover:bg-muted rounded-md">linkify.io/03gndo</div>
-                    <div className="px-4 py-2 hover:bg-muted rounded-md">linkify.io/09vmmw</div>
-                    <div className="px-4 py-2 hover:bg-muted rounded-md">linkify.io/s09vws</div>
-                    <div className="px-4 py-2 hover:bg-muted rounded-md">linkify.io/sd8fv5</div>
+                    <div className="px-4 py-2 hover:bg-muted rounded-md">Draft this week&apos;s sales report</div>
+                    <div className="px-4 py-2 hover:bg-muted rounded-md">Summarize open support tickets</div>
+                    <div className="px-4 py-2 hover:bg-muted rounded-md">Check candidate pipeline status</div>
+                    <div className="px-4 py-2 hover:bg-muted rounded-md">Reconcile this month&apos;s invoices</div>
+                    <div className="px-4 py-2 hover:bg-muted rounded-md">Follow up on the Acme deal</div>
+                    <div className="px-4 py-2 hover:bg-muted rounded-md">Flag overdue onboarding tasks</div>
                 </div>
             </Command>
         ),
     },
     {
         Icon: WaypointsIcon,
-        name: "Connect your apps",
-        description: "Integrate with your favorite apps and services.",
+        name: "Connects to your stack",
+        description: "AKAI agents plug directly into the tools your team already uses — CRM, helpdesk, HRIS, and more.",
         href: "#",
         cta: "Learn more",
         className: "col-span-3 lg:col-span-2 max-w-full overflow-hidden",
@@ -75,8 +75,8 @@ export const CARDS = [
     },
     {
         Icon: CalendarIcon,
-        name: "Calendar",
-        description: "Keep track of your links with our calendar view.",
+        name: "Always on the clock",
+        description: "Your AI employees work around the clock, logging every task and outcome automatically.",
         className: "col-span-3 lg:col-span-1",
         href: "#",
         cta: "Learn more",

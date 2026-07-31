@@ -1,56 +1,55 @@
 import { AnimationContainer, MaxWidthWrapper } from "@/components";
+import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { LampContainer } from "@/components/ui/lamp";
 import MagicBadge from "@/components/ui/magic-badge";
 import MagicCard from "@/components/ui/magic-card";
-import { ENTERPRISE_FEATURES } from "@/utils/constants/enterprise";
+import { AGENTS } from "@/utils/constants/agents";
 import { ArrowRightIcon } from "lucide-react";
 import Link from "next/link";
 
-const EnterprisePage = () => {
+const AgentsPage = () => {
     return (
         <div className="overflow-x-hidden scrollbar-hide size-full">
             {/* Hero */}
             <MaxWidthWrapper className="pt-20 pb-10">
                 <AnimationContainer className="flex flex-col items-center justify-center w-full text-center">
-                    <MagicBadge title="Enterprise" />
+                    <MagicBadge title="Our Agents" />
                     <h1 className="text-foreground text-center py-6 text-4xl font-medium tracking-normal text-balance sm:text-5xl md:text-6xl !leading-[1.15] w-full font-heading">
-                        AI Agents Built for the Enterprise
+                        Meet Your AI Workforce
                     </h1>
                     <p className="mb-6 text-lg tracking-tight text-muted-foreground md:text-xl text-balance max-w-2xl">
-                        Security, compliance, and dedicated support — AKAI scales with the largest organizations.
+                        AKAI builds specialized AI agents that work like employees — deployed in days, not months. Explore what&apos;s possible for your team.
                     </p>
-                    <Button asChild>
-                        <Link href="/auth/sign-in" className="flex items-center">
-                            Talk to Sales
-                            <ArrowRightIcon className="w-4 h-4 ml-2" />
-                        </Link>
-                    </Button>
                 </AnimationContainer>
             </MaxWidthWrapper>
 
-            {/* Feature grid */}
-            <MaxWidthWrapper className="pt-10 pb-20">
-                <AnimationContainer delay={0.1}>
-                    <div className="flex flex-col w-full items-center justify-center py-8">
-                        <h2 className="text-center text-3xl md:text-5xl !leading-[1.1] font-medium font-heading text-foreground">
-                            Why Enterprises Choose AKAI
-                        </h2>
-                    </div>
-                </AnimationContainer>
+            {/* Agent grid */}
+            <MaxWidthWrapper className="pb-20">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8">
-                    {ENTERPRISE_FEATURES.map((feature, idx) => (
-                        <AnimationContainer delay={0.1 * idx} key={feature.title}>
-                            <MagicCard className="h-full max-w-none">
-                                <div className="flex items-center justify-center w-10 h-10 rounded-lg bg-primary/10">
-                                    <feature.icon className="w-5 h-5 text-primary" strokeWidth={1.5} />
+                    {AGENTS.map((agent, idx) => (
+                        <AnimationContainer delay={0.1 * idx} key={agent.name}>
+                            <MagicCard className="h-full max-w-none flex flex-col">
+                                <div className="flex items-center justify-between">
+                                    <div className="flex items-center justify-center w-10 h-10 rounded-lg bg-primary/10">
+                                        <agent.icon className="w-5 h-5 text-primary" strokeWidth={1.5} />
+                                    </div>
+                                    <Badge variant="outline" className="text-xs">
+                                        {agent.category}
+                                    </Badge>
                                 </div>
                                 <h3 className="text-lg font-medium text-foreground mt-4">
-                                    {feature.title}
+                                    {agent.name}
                                 </h3>
-                                <p className="mt-2 text-sm text-muted-foreground">
-                                    {feature.description}
+                                <p className="mt-2 text-sm text-muted-foreground flex-1">
+                                    {agent.description}
                                 </p>
+                                <Button asChild size="sm" variant="outline" className="mt-6 w-full">
+                                    <Link href="/auth/sign-in" className="flex items-center justify-center">
+                                        Book a Demo
+                                        <ArrowRightIcon className="w-3.5 h-3.5 ml-1.5" />
+                                    </Link>
+                                </Button>
                             </MagicCard>
                         </AnimationContainer>
                     ))}
@@ -63,15 +62,15 @@ const EnterprisePage = () => {
                     <LampContainer>
                         <div className="flex flex-col items-center justify-center relative w-full text-center">
                             <h2 className="bg-gradient-to-b from-neutral-200 to-neutral-400 py-4 bg-clip-text text-center text-4xl md:text-7xl !leading-[1.15] font-medium font-heading tracking-tight text-transparent mt-8">
-                                Ready to Scale with AKAI?
+                                Don&apos;t See Your Use Case?
                             </h2>
                             <p className="text-muted-foreground mt-6 max-w-md mx-auto">
-                                Talk to our team about deploying AI agents across your organization.
+                                AKAI builds custom AI agents for any role. Tell us what you need automated, and we&apos;ll design an agent for it.
                             </p>
                             <div className="mt-6">
                                 <Button asChild>
                                     <Link href="/auth/sign-in" className="flex items-center">
-                                        Talk to Sales
+                                        Book a Demo
                                         <ArrowRightIcon className="w-4 h-4 ml-2" />
                                     </Link>
                                 </Button>
@@ -84,4 +83,4 @@ const EnterprisePage = () => {
     )
 };
 
-export default EnterprisePage
+export default AgentsPage

@@ -67,14 +67,14 @@ const PricingCards = () => {
                         key={plan.name}
                         className={cn(
                             "flex flex-col w-full border-border rounded-xl",
-                            plan.name === "Pro" && "border-2 border-purple-500"
+                            plan.name === "Growth" && "border-2 border-purple-500"
                         )}
                     >
                         <CardHeader className={cn(
                             "border-b border-border",
-                            plan.name === "Pro" ? "bg-purple-500/[0.07]" : "bg-foreground/[0.03]"
+                            plan.name === "Growth" ? "bg-purple-500/[0.07]" : "bg-foreground/[0.03]"
                         )}>
-                            <CardTitle className={cn(plan.name !== "Pro" && "text-muted-foreground", "text-lg font-medium")}>
+                            <CardTitle className={cn(plan.name !== "Growth" && "text-muted-foreground", "text-lg font-medium")}>
                                 {plan.name}
                             </CardTitle>
                             <CardDescription>
@@ -112,7 +112,7 @@ const PricingCards = () => {
                             <Link
                                 href={plan.btn.href}
                                 style={{ width: "100%" }}
-                                className={buttonVariants({ className: plan.name === "Pro" && "bg-purple-500 hover:bg-purple-500/80 text-white" })}
+                                className={buttonVariants({ className: plan.name === "Growth" && "bg-purple-500 hover:bg-purple-500/80 text-white" })}
                             >
                                 {plan.btn.text}
                             </Link>
@@ -126,14 +126,14 @@ const PricingCards = () => {
                         key={plan.name}
                         className={cn(
                             "flex flex-col w-full border-border rounded-xl",
-                            plan.name === "Pro" && "border-2 border-purple-500"
+                            plan.name === "Growth" && "border-2 border-purple-500"
                         )}
                     >
                         <CardHeader className={cn(
                             "border-b border-border",
-                            plan.name === "Pro" ? "bg-purple-500/[0.07]" : "bg-foreground/[0.03]"
+                            plan.name === "Growth" ? "bg-purple-500/[0.07]" : "bg-foreground/[0.03]"
                         )}>
-                            <CardTitle className={cn(plan.name !== "Pro" && "text-muted-foreground", "text-lg font-medium")}>
+                            <CardTitle className={cn(plan.name !== "Growth" && "text-muted-foreground", "text-lg font-medium")}>
                                 {plan.name}
                             </CardTitle>
                             <CardDescription>
@@ -182,7 +182,7 @@ const PricingCards = () => {
                             <Link
                                 href={plan.btn.href}
                                 style={{ width: "100%" }}
-                                className={buttonVariants({ className: plan.name === "Pro" && "bg-purple-500 hover:bg-purple-500/80 text-white" })}
+                                className={buttonVariants({ className: plan.name === "Growth" && "bg-purple-500 hover:bg-purple-500/80 text-white" })}
                             >
                                 {plan.btn.text}
                             </Link>
