@@ -11,7 +11,6 @@ import {
     navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
 import { cn, NAV_LINKS } from "@/utils";
-import { useClerk } from "@clerk/nextjs";
 import { LucideIcon, ZapIcon } from "lucide-react";
 import Link from "next/link";
 import React, { useEffect, useState } from 'react';
@@ -21,7 +20,8 @@ import AnimationContainer from "../global/animation-container";
 
 const Navbar = () => {
 
-    const { user } = useClerk();
+    // Clerk disabled for local UI-only preview — no auth backend configured.
+    const user = null;
 
     const [scroll, setScroll] = useState(false);
 

@@ -2,7 +2,6 @@
 
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { useSignUp } from '@clerk/nextjs';
 import { Eye, EyeOff, LoaderIcon } from "lucide-react";
 import Link from "next/link";
 import { useRouter } from 'next/navigation';
@@ -15,7 +14,14 @@ const SignUpForm = () => {
 
     const router = useRouter();
 
-    const { signUp, isLoaded, setActive } = useSignUp();
+    // Clerk disabled for local UI-only preview — no auth backend configured.
+    const isLoaded = true;
+    const signUp: any = {
+        create: async () => ({ status: "disabled" }),
+        prepareEmailAddressVerification: async () => { },
+        attemptEmailAddressVerification: async () => ({ status: "disabled" }),
+    };
+    const setActive = async (_: any) => { };
 
     const [name, setName] = useState<string>("");
     const [email, setEmail] = useState<string>("");

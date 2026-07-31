@@ -3,13 +3,14 @@
 import { Button } from "@/components/ui/button";
 import { useRouter } from "next/navigation";
 import React from 'react'
-import { useClerk } from "@clerk/nextjs";
 
 const DashboardPage = () => {
 
     const router = useRouter();
 
-    const { user, signOut } = useClerk();
+    // Clerk disabled for local UI-only preview — no auth backend configured.
+    const user = null as { firstName?: string | null } | null;
+    const signOut = () => { };
 
     return (
         <div className="flex flex-col items-center justify-center h-screen">

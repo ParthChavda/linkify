@@ -8,14 +8,14 @@ import MagicBadge from "@/components/ui/magic-badge";
 import MagicCard from "@/components/ui/magic-card";
 import { COMPANIES, PROCESS } from "@/utils";
 import { REVIEWS } from "@/utils/constants/misc";
-import { currentUser } from "@clerk/nextjs/server";
 import { ArrowRightIcon, CreditCardIcon, StarIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
 const HomePage = async () => {
 
-    const user = await currentUser();
+    // Clerk disabled for local UI-only preview — no auth backend configured.
+    const user = null;
 
     return (
         <div className="overflow-x-hidden scrollbar-hide size-full">
@@ -35,8 +35,8 @@ const HomePage = async () => {
                             </span>
                         </button>
                         <h1 className="text-foreground text-center py-6 text-5xl font-medium tracking-normal text-balance sm:text-6xl md:text-7xl lg:text-8xl !leading-[1.15] w-full font-heading">
-                            Smart Links with <span className="text-transparent bg-gradient-to-r from-violet-500 to-fuchsia-500 bg-clip-text inline-bloc">
-                                Precision
+                            AI Employees for Modern <span className="text-transparent bg-gradient-to-r from-violet-500 to-fuchsia-500 bg-clip-text inline-bloc">
+                                Business.
                             </span>
                         </h1>
                         <p className="mb-12 text-lg tracking-tight text-muted-foreground md:text-xl text-balance">

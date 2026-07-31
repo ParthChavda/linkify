@@ -14,14 +14,14 @@ import {
     SheetTrigger
 } from "@/components/ui/sheet";
 import { cn, NAV_LINKS } from "@/utils";
-import { useAuth } from "@clerk/nextjs";
 import { LucideIcon, Menu, X } from "lucide-react";
 import Link from "next/link";
 import React, { useState } from 'react';
 
 const MobileNavbar = () => {
 
-    const { isSignedIn, signOut } = useAuth();
+    // Clerk disabled for local UI-only preview — no auth backend configured.
+    const isSignedIn = false;
 
     const [isOpen, setIsOpen] = useState<boolean>(false);
 
